@@ -3,19 +3,19 @@
 <!DOCTYPE html>
 <html>
     <style>
-    .loader {
-        border: 16px solid #f3f3f3; /* Light grey */
-        border-top: 16px solid #3498db; /* Blue */
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        animation: spin 2s linear infinite;
-    }
+<!--    .loader {-->
+<!--        border: 16px solid #f3f3f3; /* Light grey */-->
+<!--        border-top: 16px solid #3498db; /* Blue */-->
+<!--        border-radius: 50%;-->
+<!--        width: 120px;-->
+<!--        height: 120px;-->
+<!--        animation: spin 2s linear infinite;-->
+<!--    }-->
 
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
+<!--    @keyframes spin {-->
+<!--        0% { transform: rotate(0deg); }-->
+<!--        100% { transform: rotate(360deg); }-->
+<!--    }-->
     .custom-file-upload {
     border: 2px solid #ccc;
     display: inline-block;
@@ -67,17 +67,17 @@ input[type="file"] {
             </label>
 
          <!-- <span class="v78_5">Загрузить файл</span> -->
-         <div class="loader" style="margin-left: 550px;" ></div>
+<!--         <div class="loader" style="margin-left: 550px;" ></div>-->
          <div class="name" ></div>
-         <span id="pris" class="v76_31" ></span>
+         <span id="pris" class="v76_31" >Теги присутствуют</span>
          <span class="v76_32" >Теги отсутствуют</span>
-         <span class="v76_34" >{{ a }}</span>
+         <span class="v76_34" >Статистика</span>
       </div>
    </body>
    <script>
-    document.getElementById('test').onclick = function() {
-      document.getElementById('pris').hidden = true;
-    }
+<!--    document.getElementById('test').onclick = function() {-->
+<!--      document.getElementById('pris').hidden = true;-->
+<!--    }-->
     const input = document.querySelector("input")
 input.onchange = (e) => {
   const [file] = e.target.files
@@ -162,8 +162,7 @@ input[type="file"] {
 input.onchange = (e) => {
   const [file] = e.target.files
   console.log(file.name)
-  document.getElementById('GFG').innerHTML
-                = file.name;
+  document.getElementById('GFG').innerHTML = file.name;
 }
    </script>
 </html>
