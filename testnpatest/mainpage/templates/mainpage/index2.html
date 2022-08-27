@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<style>
+    .custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: red
+}
+input[type="file"] {
+    display: none;
+}
+</style>
+<head>
+</head>
+<body>
+
+
+  <label for="file-upload" class="custom-file-upload">
+    Загрузите файл
+</label>
+<input type="file" id="file-upload" multiple onchange="showname()"/>
+ <label id = "GFG">
+        File name
+    </label>
+</body>
+</html>
+<script>
+    const input = document.querySelector("input")
+input.onchange = (e) => {
+  const [file] = e.target.files
+  console.log(file.name)
+  document.getElementById('GFG').innerHTML
+                = file.name;
+}
+ </script>
