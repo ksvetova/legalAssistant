@@ -1,5 +1,4 @@
 {% load static %}
-{% if a == 1 %}
 <!DOCTYPE html>
 <html>
     <style>
@@ -15,7 +14,7 @@
 <!--    @keyframes spin {-->
 <!--        0% { transform: rotate(0deg); }-->
 <!--        100% { transform: rotate(360deg); }-->
-<!--    }-->
+<!--    }-->     <!-- полоса загрузки, закомментирована -->
     .custom-file-upload {
     border: 2px solid #ccc;
     display: inline-block;
@@ -26,7 +25,7 @@
 }
 input[type="file"] {
     display: none;
-}
+}  <!-- скрытое имя файла -->
 .line {
   background-color: rgba(0, 0, 0);
   width: 72%;
@@ -35,6 +34,22 @@ input[type="file"] {
   left: 450px;
   top: 270px;
 }
+
+.card {
+  overflow-x: auto;
+  display: flex;
+  width:90%
+  background-color: #fff;
+  max-height: 150px;
+}
+.card--content {
+  background-color: #e74c3c;
+  min-width: 150px;
+  margin-left: 15px;
+  border-radius:20px;
+}
+
+
     </style>
    <head>
       <link href="https://fonts.googleapis.com/css?family=Hahmlet&display=swap" rel="stylesheet" />
@@ -52,118 +67,65 @@ input[type="file"] {
             <div class="v76_27" style="margin-left: 43px; margin-top: 20px;"></div>
         </label>
           <div  class="line"></div>
-         <div class="v76_29" ></div>
-         <div class="v76_30" ></div>
-         <div class="v76_33" ></div>
-         <div class="v76_35" ></div>
+          <label id = "GFG" style="font-size:30px; margin-left: 50px;">
 
-         <span class="v76_36" >Описание тега</span>
-         <!-- <div class="v76_28"></div> -->
+            </label>
+ <p style="margin:100px">Теги присутствуют</p>
+    <section class="card" style="margin-left: 113px; width: 90%;"> <!-- скрол c тегами-->
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+
+         </section>
+
+          <p style="margin:100px">Теги отсутствуют</p>
+
+    <section class="card" style="margin-left: 113px; width: 90%;"> <!-- скрол c тегами-->
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+         </section>
+<!--        <p style="margin:300px;"></p>-->
+<!--         <div class="v76_33" ></div>-->
+<!--          <p style="margin:300px;"></p>-->
+<!--         <div class="v76_35" ></div>-->
+<!-- <span class="v76_34" >Статистика</span>-->
+<!--         <span class="v76_36" >Описание тега</span>-->
+
 
 
         <input type="file" id="file-upload" multiple onchange="showname()" />
-         <label id = "GFG" style="font-size:30px; margin-left: 50px;">
-                {{ filename }}
-            </label>
 
-         <!-- <span class="v78_5">Загрузить файл</span> -->
-<!--         <div class="loader" style="margin-left: 550px;" ></div>-->
-         <div class="name" ></div>
-         <span id="pris" class="v76_31" >Теги присутствуют</span>
-         <span class="v76_32" >Теги отсутствуют</span>
-         <span class="v76_34" >Статистика</span>
+
+
+<!--         <div class="loader" style="margin-left: 550px;" ></div>-->  <!-- полоса загрузки, закомментирована -->
+         <div class="name" > adsfasdf</div>
+
       </div>
    </body>
    <script>
-<!--    document.getElementById('test').onclick = function() {-->
-<!--      document.getElementById('pris').hidden = true;-->
-<!--    }-->
     const input = document.querySelector("input")
 input.onchange = (e) => {
   const [file] = e.target.files
-  console.log(file.name)
-  document.getElementById('GFG').innerHTML
-                = file.name;
+  document.getElementById('GFG').innerHTML = file.name;   <!-- изменение названия файла -->
 }
    </script>
 </html>
-{% else %}
-<!DOCTYPE html>
-<html>
-    <style>
-    .loader {
-        border: 16px solid #f3f3f3; /* Light grey */
-        border-top: 16px solid #3498db; /* Blue */
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-        animation: spin 2s linear infinite;
-    }
-
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-    .custom-file-upload {
-    border: 2px solid #ccc;
-    display: inline-block;
-    padding: 25px 72px;
-    margin-left: 113px;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255)
-}
-input[type="file"] {
-    display: none;
-}
-.line {
-  background-color: rgba(0, 0, 0);
-  width: 72%;
-  height: 2px;
-  position: absolute;
-  left: 450px;
-  top: 270px;
-}
-    </style>
-   <head>
-      <link href="https://fonts.googleapis.com/css?family=Hahmlet&display=swap" rel="stylesheet" />
-      <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-      <link href="{% static 'mainpage/css/main.css' %}" rel="stylesheet" />
-      <title>Юридический помощник</title>
-   </head>
-   <body>
-      <div class="v76_2">
-<div class="v76_14"></div>
-         <span class="v76_19">Юридический помощник для НПА</span>
-         <!-- <div class="v78_4"></div> -->
-          <label for="file-upload" id="test" class="custom-file-upload" style="color: #393939; padding-top: 70px; font-size: 24px; margin-top: 10px;">
-            Загрузите файл
-            <div class="v76_27" style="margin-left: 43px; margin-top: 20px;"></div>
-        </label>
-          <div  class="line"></div>
-         <!-- <div class="v76_28"></div> -->
-
-
-        <input type="file" id="file-upload" multiple onchange="showname()" />
-         <label id = "GFG" style="font-size:30px; margin-left: 50px;">
-
-            </label>
-
-         <!-- <span class="v78_5">Загрузить файл</span> -->
-<!--         <div class="loader" style="margin-left: 45%; margin-top: 10%" ></div>-->
-         <div class="name" ></div>
-         <span id="pris" class="v76_31" ></span>
-      </div>
-   </body>
-   <script>
-    document.getElementById('test').onclick = function() {
-      document.getElementById('pris').hidden = true;
-    }
-    const input = document.querySelector("input")
-input.onchange = (e) => {
-  const [file] = e.target.files
-  console.log(file.name)
-  document.getElementById('GFG').innerHTML = file.name;
-}
-   </script>
-</html>
-{% endif %}

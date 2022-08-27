@@ -7,7 +7,7 @@ import mainpage.nlp_model as model
 
 # Create your views here.
 m = 0
-a = 0
+a = 1
 def index(request):
     model.test_function()
     return render(request, 'mainpage/index.html', {'a': a})
