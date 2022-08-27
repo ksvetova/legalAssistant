@@ -6,7 +6,7 @@ from django.http import *
 
 # Create your views here.
 m = 0
-a = 0
+a = 1
 def index(request):
     # nlp_m.analyze_doc()
     return render(request, 'mainpage/index.html', {'a': a})
