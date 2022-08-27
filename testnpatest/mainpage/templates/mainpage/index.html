@@ -35,6 +35,22 @@ input[type="file"] {
   left: 450px;
   top: 270px;
 }
+
+.card {
+  overflow-x: auto;
+  display: flex;
+  width:90%
+  background-color: #fff;
+  max-height: 150px;
+}
+.card--content {
+  background-color: #e74c3c;
+  min-width: 150px;
+  margin-left: 15px;
+  border-radius:20px;
+}
+
+
     </style>
    <head>
       <link href="https://fonts.googleapis.com/css?family=Hahmlet&display=swap" rel="stylesheet" />
@@ -52,26 +68,58 @@ input[type="file"] {
             <div class="v76_27" style="margin-left: 43px; margin-top: 20px;"></div>
         </label>
           <div  class="line"></div>
-         <div class="v76_29" ></div>
-         <div class="v76_30" ></div>
-         <div class="v76_33" ></div>
-         <div class="v76_35" ></div>
+          <label id = "GFG" style="font-size:30px; margin-left: 50px;">
 
-         <span class="v76_36" >Описание тега</span>
-         <!-- <div class="v76_28"></div> -->
+            </label>
+ <p style="margin:100px">Теги присутствуют</p>
+    <section class="card" style="margin-left: 113px; width: 90%;">
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+
+         </section>
+
+          <p style="margin:100px">Теги отсутствуют</p>
+
+    <section class="card" style="margin-left: 113px; width: 90%;">
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+        <div class="card--content" style="margin-bottom:15px;"><p style="margin-left:50%">4</p></div>
+         </section>
+<!--        <p style="margin:300px;"></p>-->
+<!--         <div class="v76_33" ></div>-->
+<!--          <p style="margin:300px;"></p>-->
+<!--         <div class="v76_35" ></div>-->
+<!-- <span class="v76_34" >Статистика</span>-->
+<!--         <span class="v76_36" >Описание тега</span>-->
+
 
 
         <input type="file" id="file-upload" multiple onchange="showname()" />
-         <label id = "GFG" style="font-size:30px; margin-left: 50px;">
-                {{ filename }}
-            </label>
 
-         <!-- <span class="v78_5">Загрузить файл</span> -->
-<!--         <div class="loader" style="margin-left: 550px;" ></div>-->
-         <div class="name" ></div>
-         <span id="pris" class="v76_31" >Теги присутствуют</span>
-         <span class="v76_32" >Теги отсутствуют</span>
-         <span class="v76_34" >Статистика</span>
+
+
+         <div class="loader" style="margin-left: 550px;" ></div>
+         <div class="name" > adsfasdf</div>
+
       </div>
    </body>
    <script>
@@ -81,7 +129,6 @@ input[type="file"] {
     const input = document.querySelector("input")
 input.onchange = (e) => {
   const [file] = e.target.files
-  console.log(file.name)
   document.getElementById('GFG').innerHTML
                 = file.name;
 }
@@ -149,7 +196,7 @@ input[type="file"] {
             </label>
 
          <!-- <span class="v78_5">Загрузить файл</span> -->
-         <div class="loader" style="margin-left: 550px;" ></div>
+<!--         <div class="loader" style="margin-left: 45%; margin-top: 10%" ></div>-->
          <div class="name" ></div>
          <span id="pris" class="v76_31" ></span>
       </div>
