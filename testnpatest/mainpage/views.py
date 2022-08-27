@@ -2,13 +2,14 @@
 from django.shortcuts import render
 import time
 from django.http import *
-# import nlp_model as nlp_m
+
+import mainpage.nlp_model as model
 
 # Create your views here.
 m = 0
 a = 1
 def index(request):
-    # nlp_m.analyze_doc()
+    model.test_function()
     return render(request, 'mainpage/index.html', {'a': a})
 
 def tags(request):
